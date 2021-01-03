@@ -23,7 +23,7 @@ def main(argv):
     parser = ucbintermParser(stream)
     tree = parser.data_stream()
 
-    output_file = open("output.txt", "w")
+    output_file = open("/home/chrispy/workspace/fprock_hdl/util/NEO_M9N_UART_STIMULUS.txt", "w")
     listening = gpsListener(output_file)
     walker = ParseTreeWalker()
     walker.walk(listening, tree)
